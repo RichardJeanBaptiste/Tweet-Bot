@@ -1,0 +1,23 @@
+{
+  "name": "tweet-bot",
+  "version": "1.0.0",
+  "description": "auto tweet bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Richinbk/tweet-bot.git"
+  },
+  "author": "Richard Jean-Baptiste",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Richinbk/tweet-bot/issues"
+  },
+  "homepage": "https://github.com/Richinbk/tweet-bot#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "twit": "^2.2.9"
+  }
+}

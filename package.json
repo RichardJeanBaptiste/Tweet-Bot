@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/Richinbk/tweet-bot#readme",
   "dependencies": {
-    "express": "^4.15.3",
-    "twit": "^2.2.9"
+    "express": "^4.17.1",
+    "twit": "^2.2.9",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.19.4"
   }
 }

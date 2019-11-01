@@ -1,22 +1,27 @@
-var express = require('express');
-var app = express();
-var fs = require('fs');
-var Twitter = require('twitter');
-
+const express = require('express');
+const app = express();
+const fs = require('fs');
+const Twitter = require('twitter');
+const Quotes = require('../tweet-bot/Quotes.json');
+const keys = require('./config');
 
 console.log('Replier bot is starting');
 
+const T = new Twitter(
+   keys
+);
 
-var T = new Twitter({
-   consumer_key: 'nFPFl3fBLELG4UBj57KyKLCLE',
-   consumer_secret: '6NhXvmlJugPx2opM894XjpEiyXScBrQs40D8ZCWpkexgX61tPg',
-   access_token_key: '3983518996-2Csu1UihZfXtKEBn7PoeiMPa636xrKoeMaDNefj',
-   access_token_secret: 'MaVG07GRxc4rHJOZ4rx41Tp0cf50w7P7cGBAocldlcHJv',
-});
+function TweetOut(){
 
-T.post('statuses/update', { status: 'hello world!' }, function(err, data, response) {
-   console.log(data)
- })
+   quoteNum = Math.floor(Math.random() * 7);
+
+   T.post('statuses/update', { status: Quotes[quoteNum]['Quote'] }, function(err, data, response) {
+      console.log(data)
+    });
+
+}
+
+setInterval(TweetOut, 1000 * 60 * 60);
+
 
 app.listen(3000);
-

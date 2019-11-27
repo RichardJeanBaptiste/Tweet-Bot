@@ -1,24 +1,31 @@
 [
     {
-        "Quote" : "Everyone's life is a warfare, and that long and various."
+        "Quote" : "Everyone's life is a warfare, and that long and various.",
+        "Author": "Epictetus"
     },
     {
-        "Quote": "Enjoy the sound of silence."
+        "Quote": "Enjoy the sound of silence.",
+        "Author": "Timothy Salter"
     },
     {
-        "Quote": "Do not wait for anybody or anything. Do whatever you can. Build your hope on none."
+        "Quote": "Do not wait for anybody or anything. Do whatever you can. Build your hope on none.",
+        "Author": "Swami Vivekananda"
     },
     {
-        "Quote": "Eveyone we meet is either a lesson or a gift. Move forward accordingly." 
+        "Quote": "Eveyone we meet is either a lesson or a gift. Move forward accordingly.",
+        "Author": "Unknown"
     },
     {
-        "Quote": "It's better to have loved and lost that to stay home every night and download increasingly shameful pornography."
+        "Quote": "It's better to have loved and lost that to stay home every night and download increasingly shameful pornography.",
+        "Author": "Raj Koothrappali"
     },
     {
-        "Quote": "Sometimes it's not the people who change, it's the mask that falls off."
+        "Quote": "Sometimes it's not the people who change, it's the mask that falls off.",
+        "Author": "Unknown"
     },
     {
-        "Quote": "Without music, life would be a mistake."
+        "Quote": "Without music, life would be a mistake.",
+        "Author": "Friedrich Nietzsche"
     },
     {
         "Quote": "Don't waste your time worrying about other people--unless it affects the common good. It will keep you from doing anything useful.",

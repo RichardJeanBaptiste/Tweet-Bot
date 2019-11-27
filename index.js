@@ -19,7 +19,7 @@ function TweetOut(){
    let tweetString = Quotes[quoteNum]['Quote'] + "\n" + Quotes[quoteNum]['Author'];
 
    T.post('statuses/update', { status: tweetString }, function(err, data, response) {
-      console.log(data)
+      console.log(data);
     });
 
 }

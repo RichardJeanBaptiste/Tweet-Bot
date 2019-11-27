@@ -11,11 +11,14 @@ const T = new Twitter(
    keys
 );
 
+
 function TweetOut(){
 
-   quoteNum = Math.floor(Math.random() * 7);
+   quoteNum = Math.floor(Math.random() * 38);
 
-   T.post('statuses/update', { status: Quotes[quoteNum]['Quote'] }, function(err, data, response) {
+   let tweetString = Quotes[quoteNum]['Quote'] + "\n" + Quotes[quoteNum]['Author'];
+
+   T.post('statuses/update', { status: tweetString }, function(err, data, response) {
       console.log(data)
     });
 
@@ -25,3 +28,6 @@ setInterval(TweetOut, 1000 * 60 * 60);
 
 
 app.listen(3000);
+
+
+//console.log(Quotes[10]['Quote'] + "\n" + Quotes[10]['Author']);

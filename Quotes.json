@@ -100,6 +100,26 @@
         "Author": "Fyodor Dostoyevsky"
     },
     {
+        "Quote": "A friend to all is a friend to none",
+        "Author": "Aristotle"
+    },
+    {
+        "Quote": "The law is reason, free from passion",
+        "Author": "Aristotle"
+    },
+    {
+        "Quote": "Man is by nature a politcal animal",
+        "Author": "Aristotle"
+    },
+    {
+        "Quote": "It is the mark of an educated mind to be able to entertain a thought without accepting it.",
+        "Author": "Aristotle"
+    },
+    {
+        "Quote": "Educating the mind without educating the heart is no education at all.",
+        "Author": "Aristotle"
+    },
+    {
         "Quote": "To live without hope is to cease to live",
         "Author":"Fyodor Dostoyevsky"
     },
@@ -154,5 +174,301 @@
     {
         "Quote": "When you learn, teach. When you get, give",
         "Author":"Maya Angelou"
+    },
+    {
+        "Quote": "If we don't believe in freedom of expression for people we despise, we don't believe in it at all",
+        "Author": "Noam Chomsky"
+    },
+    {
+        "Quote": "Everyone's worried about stopping terrorism. Well, there's a really easy way: stop participating in it",
+        "Author": "Noam Chomsky"
+    },
+    {
+        "Quote": "Education is a system of imposed ignorance",
+        "Author": "Noam Chomsky"
+    },
+    {
+        "Quote": "The Bible is one of the most genocidal books in human history",
+        "Author":"Noam Chomsky"
+    },
+    {
+        "Quote": "Happiness in intelligent people is the rarest thing I know",
+        "Author": "Ernest Hemingway"
+    },
+    {
+        "Quote": "Courage is grace under pressure",
+        "Author": "Ernest Hemingway"
+    },
+    {
+        "Quote": "But man is not made for defeat. A man can be destroyed but not defeated",
+        "Author":"Ernest Hemingway"
+    },
+    {
+        "Quote": "There is nothing to writing. All you do is sit down at a typewriter and bleed",
+        "Author":"Ernest Hemingway"
+    },
+    {
+        "Quote": "There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self",
+        "Author": "Ernest Hemingway"
+    },
+    {
+        "Quote": "The world breaks everyone, and afterward, some are srong at the broken places",
+        "Author":"Ernest Hemingway"
+    },
+    {
+        "Quote": "An unexamined life is not wirth living",
+        "Author": "Socrates"
+    },
+    {
+        "Quote": "The only thing I know, and that is that I know nothing",
+        "Author": "Socrates"
+    },
+    {
+        "Quote": "When the debate is over, slander becomes the tool of the loser",
+        "Author": "Socrates"
+    },
+    {
+        "Quote": "True knowledge exists in knowing that you know nothing",
+        "Author": "Socrates"
+    },
+    {
+        "Quote": "To find yourself, think for yourself",
+        "Author": "Socrates"
+    },
+    {
+        "Quote": "Education is the kindling of a flame, not the filling of a vessel",
+        "Author": "Socrates"
+    },
+    {
+        "Quote": "Beware the barrenness of a busy life",
+        "Author": "Socrates"
+    },
+    {
+        "Quote": "I cannot teach anybody anything, I can only make them think",
+        "Author": "Socrates"
+    },
+    {
+        "Quote": "There is only one good, knowledge, and one evil, ignorance",
+        "Author": "Socrates"
+    },
+    {
+        "Quote": "There is nothing impossible to him who will try",
+        "Author": "Alexander the Great"
+    },
+    {
+        "Quote": "Remember upon the conduct of each depends the fate of all",
+        "Author": "Alexander the Great"
+    },
+    {
+        "Quote": "I had rather excel others in the knowledge of what is excellent, than in the extent of my power and dominion.",
+        "Author": "Alexander the Great"
+    },
+    {
+        "Quote": "I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion",
+        "Author": "Alexander the Great"
+    },
+    {
+        "Quote": "Atheism is nothing more than the noises reasonable people make when in the presence of religious dogma",
+        "Author": "Sam Harris"
+    },
+    {
+        "Quote": "The ahtiest, by merely being in touch with reality, appears shamefully out of touch with the fantasy life of his neighbors",
+        "Author": "Sam Harris"
+    },
+    {
+        "Quote": "Science, in the broadest sense, includes all reasonable claims to knowledge about ourselves and the world",
+        "Author": "Sam Harris"
+    },
+    {
+        "Quote": "The problem is that religion tends to give people bad reasons to be good",
+        "Author": "Sam Harris"
+    },
+    {
+        "Quote": "It's simply untrue that religion provides the only framework for a universal morality",
+        "Author": "Sam Harris"
+    },
+    {
+        "Quote": "You only lose what you cling to",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "The mind is everything. What you think you become.",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "Peace comes from within. Do not seek it without",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "Peace comes from within. Do not seek it without.",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "All that we are is the result of what we have thought",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "You, yourself, as much as anybody in the entire universe, deserve your love and affection.",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "The only real failure in life is not to be true to the best one knows.",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "It is a man's own mind, not his enemy or foe, that lures him to evil ways",
+        "Author": "Gautama Buddha"
+    },
+    {
+        "Quote": "Chaos is inherent in all compunded things. Strive on with diligence",
+        "Author":"Gautama Buddha"
+    },
+    {
+        "Quote": "What I cannot create, I do not understand.",
+        "Author": "Richard Feynman"
+    },
+    {
+        "Quote": "The first principle is that you must not fool yourself and you are the easiest person to fool.",
+        "Author": "Richard Feynman"
+    },
+    {
+        "Quote": "I was born not knowing and have had only a little time to change that here and there.",
+        "Author": "Richard Feynman"
+    },
+    {
+        "Quote": "I believe that a scientist looking at nonscientific problems is just as dumb as the next guy",
+        "Author": "Richard Feynman"
+    },
+    {
+        "Quote": "I find in myself a desire which no experience in this world can satisfy, the most probable explanation is that I was made for another world",
+        "Author": "C.S. Lewis"
+    },
+    {
+        "Quote": "Pity a man in a familiar places who yet feels like a stranger",
+        "Author": "Peter Griffin"
+    },
+    {
+        "Quote": "Perfection and power are ovverated",
+        "Author": "Uncle Iroh"
+    },
+    {
+        "Quote": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
+        "Author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "Quote": "Without haste, but without rest.",
+        "Author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "Quote": "Few people have the imagination for reality",
+        "Author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "Quote": "Whatever you can do or dream you can, begin it. Boldness has genius,power, and magic in it.",
+        "Author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "Quote": "None are more hopelessly enslaved than those who falsely believe they are free",
+        "Author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "Quote": "As soon as you trust yourself, you will know how to live.",
+        "Author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "Quote": "Nothing is worth more than this day",
+        "Author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "Quote": "We are shaped and fashioned by what we love",
+        "Author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "Quote": "Years of love have been forgot, in the hatred of a minute",
+        "Author": "Edgar Allen Poe"
+    },
+    {
+        "Quote": "I became insane, with long intervals of horrible sanity",
+        "Author": "Edgar Allen Poe"
+    },
+    {
+        "Quote": "Quoth the raven, Nevermore!",
+        "Author": "Edgar Allen Poe"
+    },
+    {
+        "Quote": "We loved with a love that was more than love",
+        "Author": "Edgar Allen Poe"
+    },
+    {
+        "Quote": "Never to suffer would never to have been blessed",
+        "Author": "Edgar Allen Poe"
+    },
+    {
+        "Quote": "Those who dream by day are cognizant of many things which escape those who dream only by night",
+        "Author": "Edgar Allen Poe"
+    },
+    {
+        "Quote": "Her voice is full of money",
+        "Author": "F. Scott Fitzgerald"
+    },
+    {
+        "Quote": "Never confuse a single defeat with a final defeat",
+        "Author": "F. Scott Fitzgerald"
+    },
+    {
+        "Quote": "Show me a hero and I will write you a tragedy",
+        "Author": "F. Scott Fitzgerald"
+    },
+    {
+        "Quote": "There are no second acts in American lives",
+        "Author": "F. Scott Fitzgerald"
+    },
+    {
+        "Quote": "First you take a drink, then the drink takes a drink, then the drink takes you",
+        "Author": "F. Scott Fitzgerald"
+    },
+    {
+        "Quote": "Everyone suspects himself of at least one of the cardinal virtues, and this is mine: I am one of the few honest people that I have ever known.",
+        "Author": "F. Scott Fitzgerald"
+    },
+    {
+        "Quote": "The secret of getting ahead is getting started",
+        "Author": "Mark Twain"
+    },
+    {
+        "Quote": "Kindness is the language which the deaf can hear and the blind can see",
+        "Author": "Mark Twain"
+    },
+    {
+        "Quote": "Lies, damned lies, and statistics",
+        "Author": "Mark Twain"
+    },
+    {
+        "Quote": "The man who does not read good books has no advantage over the man who cannot read them.",
+        "Author": "Mark Twain"
+    },
+    {
+        "Quote": "The two most important days in your life are the day you are born and the day you find out why",
+        "Author": "Mark Twain"
+    },
+    {
+        "Quote": "If you tell the truth, you don't have to remember anything",
+        "Author": "Mark Twain"
+    },
+    {
+        "Quote": "Whenever you find yourself on the side of the majority, it is time to pause and reflect.",
+        "Author": "Mark Twain"
+    },
+    {
+        "Quote": "I am in the temper that if I were under water I would scarely kick to come to the top.",
+        "Author": "John Keats"
     }
 ]

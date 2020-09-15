@@ -78,7 +78,7 @@ async function TweetOut(){
 
 
 //setInterval(TweetOut, 1000 * 60 * 60);
-setInterval(TweetOut, 1000 * 60);
+setInterval(TweetOut, 3600000);
 
 
 app.listen(PORT);

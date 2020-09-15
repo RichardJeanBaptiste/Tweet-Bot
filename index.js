@@ -55,7 +55,6 @@ async function getRandomQuote(){
 async function TweetOut(){
 
    let withinCharLimit = false;
-
    
    while(withinCharLimit == false){
       let x = await getRandomQuote();
@@ -65,7 +64,11 @@ async function TweetOut(){
 
       let tweetString = quote + "\n\n - " + author;
 
+      T.post('statuses/update', { status: tweetString }, function(err, data, response) {
+         console.log(data);
+      });
 
+      /*
       if(tweetString < 280){
          withinCharLimit = true;
       try {
@@ -76,13 +79,19 @@ async function TweetOut(){
       } catch (error) {
          console.log(error)
       };         
-   } 
+      } 
+      */
    }
     
 }
 
+T.post('statuses/update', { status: "abc" }, function(err, data, response) {
+   console.log(data);
+});
 
-setInterval(TweetOut, 1000 * 60 * 60);
+
+//setInterval(TweetOut, 1000 * 60 * 60);
+//setInterval(TweetOut, 3000);
 
 
 

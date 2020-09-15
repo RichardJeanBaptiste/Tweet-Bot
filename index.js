@@ -77,19 +77,10 @@ async function TweetOut(){
 }
 
 
-//setInterval(TweetOut, 1000 * 60 * 60);
-setInterval(TweetOut, 1000 * 60);
+setInterval(TweetOut, 1000 * 60 * 60);
+//setInterval(TweetOut, 1000 * 60);
 
 
 app.listen(PORT);
 
 
-/*
-    T.get('https://api.twitter.com/1.1/statuses/user_timeline.json',{},function(err,data,response){
-         console.log(data[0].text);
-         let lastTweet = data[0].text;
-
-      })
-
-
-*/

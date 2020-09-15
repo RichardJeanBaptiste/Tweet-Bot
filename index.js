@@ -67,7 +67,7 @@ async function TweetOut(){
       if(tweetString.length < 280){
          withinCharLimit = true;
             
-         T.post('statuses/update', { status: "abc" }, function(err, data, response) {
+         T.post('statuses/update', { status: tweetString }, function(err, data, response) {
             console.log(data);
          });
          

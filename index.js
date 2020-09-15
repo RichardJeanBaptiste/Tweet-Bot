@@ -2,34 +2,99 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 const Twitter = require('twitter');
-const Quotes = require('../tweet-bot/Quotes.json');
 const keys = require('./config');
+const axios = require('axios');
+const mongoose = require('mongoose');
+const mongoDB = require('./mongodb');
+const PORT = process.env.PORT || 3000;
+
+
+mongoose.connect(mongoDB, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
+});
 
 console.log('Replier bot is starting');
-
 
 const T = new Twitter(
    keys
 );
 
+const Schema = mongoose.Schema;
 
-function TweetOut(){
+const QuoteSchema = new Schema({
+   name: {
+       type: String,
+       required: 'Name required'
+   },
+   quote: {
+       type: String,
+       required: 'Quote required'
+   }
+})
 
-   quoteNum = Math.floor(Math.random() * 38);
+const Quotes = mongoose.model('Quote', QuoteSchema);
 
-   let tweetString = Quotes[quoteNum]['Quote'] + "\n\n - " + Quotes[quoteNum]['Author'];
+async function getRandomQuote(){
+   
+   const allQuotes = await Quotes.find({}).then((data)=>{
+      return data;
+   })
 
-   T.post('statuses/update', { status: tweetString }, function(err, data, response) {
-      console.log(data);
-    });
+   const count = await Quotes.countDocuments({}).then((data)=>{
+      let rand = Math.floor(Math.random() * data);
+      return rand
+   })
 
+   return allQuotes[count]
 }
+
+
+async function TweetOut(){
+
+   let withinCharLimit = false;
+
+   
+   while(withinCharLimit == false){
+      let x = await getRandomQuote();
+      
+      let quote = x.quote;
+      let author = x.name;
+
+      let tweetString = quote + "\n\n - " + author;
+
+
+      if(tweetString < 280){
+         withinCharLimit = true;
+      try {
+         T.post('statuses/update', { status: tweetString }, function(err, data, response) {
+            console.log(data);
+         });
+
+      } catch (error) {
+         console.log(error)
+      };         
+   } 
+   }
+    
+}
+
 
 setInterval(TweetOut, 1000 * 60 * 60);
 
 
-app.listen(3000);
+
+app.listen(PORT);
 
 
-//console.log(Quotes[10]['Quote'] + "\n\n - " + Quotes[10]['Author']);
+/*
+    T.get('https://api.twitter.com/1.1/statuses/user_timeline.json',{},function(err,data,response){
+         console.log(data[0].text);
+         let lastTweet = data[0].text;
 
+      })
+
+
+*/

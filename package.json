@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/Richinbk/tweet-bot#readme",
   "dependencies": {
+    "axios": "^0.20.0",
     "cryptiles": "^4.1.3",
     "express": "^4.17.1",
     "hoek": "^6.1.3",
-    "node-fetch": "^2.6.0",
+    "mongoose": "^5.10.5",
     "twit": "^2.2.9",
     "twitter": "^1.7.1"
   },

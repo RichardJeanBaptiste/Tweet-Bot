@@ -63,36 +63,22 @@ async function TweetOut(){
       let author = x.name;
 
       let tweetString = quote + "\n\n - " + author;
-
-      T.post('statuses/update', { status: tweetString }, function(err, data, response) {
-         console.log(data);
-      });
-
-      /*
-      if(tweetString < 280){
+   
+      if(tweetString.length < 280){
          withinCharLimit = true;
-      try {
-         T.post('statuses/update', { status: tweetString }, function(err, data, response) {
+            
+         T.post('statuses/update', { status: "abc" }, function(err, data, response) {
             console.log(data);
          });
-
-      } catch (error) {
-         console.log(error)
-      };         
-      } 
-      */
-   }
-    
+         
+            
+      }       
+   } 
 }
-
-T.post('statuses/update', { status: "abc" }, function(err, data, response) {
-   console.log(data);
-});
 
 
 //setInterval(TweetOut, 1000 * 60 * 60);
-//setInterval(TweetOut, 3000);
-
+setInterval(TweetOut, 1000 * 60);
 
 
 app.listen(PORT);

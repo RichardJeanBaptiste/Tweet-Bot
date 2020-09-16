@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const mongoDB = require('./mongodb');
 const cron = require('cron');
 const Quotes = require('./quote.model');
+const { request } = require('http');
 const PORT = process.env.PORT || 3000;
 
 
@@ -63,6 +64,13 @@ async function TweetOut(){
    } 
 }
 
+function wakeUp(){
+   request("http://finance-tweet-bot.herokuapp.com/", function(){
+      console.log("WAKE UP DYNO");
+   });
+}
+
+setTimeout(wakeUp, 600000);
 
 let cronJob = new cron.CronJob('0 */6 * * *', () => {
    TweetOut();

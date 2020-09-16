@@ -3,9 +3,10 @@ const app = express();
 const fs = require('fs');
 const Twitter = require('twitter');
 const keys = require('./config');
-const axios = require('axios');
 const mongoose = require('mongoose');
 const mongoDB = require('./mongodb');
+const cron = require('cron');
+const Quotes = require('./quote.model');
 const PORT = process.env.PORT || 3000;
 
 
@@ -22,20 +23,6 @@ const T = new Twitter(
    keys
 );
 
-const Schema = mongoose.Schema;
-
-const QuoteSchema = new Schema({
-   name: {
-       type: String,
-       required: 'Name required'
-   },
-   quote: {
-       type: String,
-       required: 'Quote required'
-   }
-})
-
-const Quotes = mongoose.model('Quote', QuoteSchema);
 
 async function getRandomQuote(){
    
@@ -77,10 +64,12 @@ async function TweetOut(){
 }
 
 
-//setInterval(TweetOut, 1000 * 60 * 60);
-setInterval(TweetOut, 3600000);
+let cronJob = new cron.CronJob('0 */6 * * *', () => {
+   TweetOut();
+});
+
+cronJob.start();
+
 
 
 app.listen(PORT);
-
-

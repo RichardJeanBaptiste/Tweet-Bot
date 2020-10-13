@@ -25,6 +25,7 @@ const T = new Twitter(
 );
 
 
+// get random quote from database
 async function getRandomQuote(){
    
    const allQuotes = await Quotes.find({}).then((data)=>{
@@ -40,6 +41,7 @@ async function getRandomQuote(){
 }
 
 
+// tweet out quotes
 async function TweetOut(){
 
    let withinCharLimit = false;
@@ -53,25 +55,35 @@ async function TweetOut(){
       let tweetString = quote + "\n\n - " + author;
    
       if(tweetString.length < 280){
-         withinCharLimit = true;
-            
+         withinCharLimit = true;          
          T.post('statuses/update', { status: tweetString }, function(err, data, response) {
+            if(err) {
+               console.log(err);
+            }
+
             console.log(data);
          });
-         
-            
+                     
       }       
    } 
 }
 
+// send a response to avoid 143 Heroku error
 function wakeUp(){
-   request("http://finance-tweet-bot.herokuapp.com/", function(){
+   try {
+      request("http://finance-tweet-bot.herokuapp.com/", function(){
       console.log("WAKE UP DYNO");
-   });
+      });
+   } catch (error) {
+      console.log(error);
+   }
+   
 }
 
 setTimeout(wakeUp, 600000);
 
+
+// post a tweet every 6 hours
 let cronJob = new cron.CronJob('0 */6 * * *', () => {
    TweetOut();
 });

@@ -88,14 +88,16 @@ function wakeUp(){
 
 setTimeout(wakeUp, 600000);
 
-try {
+
    // post a tweet every 6 hours
 let cronJob = new cron.CronJob('0 */6 * * *', () => {
-   TweetOut();
+   
+   try {
+      TweetOut();
+   } catch (error) {
+      console.log(error)
+   }
 });
-} catch (error) {
-   console.log("sent tweet error")
-}
 
 
 cronJob.start();

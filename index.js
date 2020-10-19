@@ -53,18 +53,24 @@ async function TweetOut(){
       let author = x.name;
 
       let tweetString = quote + "\n\n - " + author;
-   
-      if(tweetString.length < 280){
-         withinCharLimit = true;          
-         T.post('statuses/update', { status: tweetString }, function(err, data, response) {
-            if(err) {
-               console.log(err);
-            }
+      try {
 
-            console.log(data);
-         });
-                     
-      }       
+         if(tweetString.length < 280){
+            withinCharLimit = true;          
+            T.post('statuses/update', { status: tweetString }, function(err, data, response) {
+               if(err) {
+                  console.log(err);
+               }
+   
+               console.log(data);
+            });           
+         }  
+         
+      } catch (error) {
+         
+         console.log("tweetout error");
+      }
+           
    } 
 }
 
@@ -82,11 +88,15 @@ function wakeUp(){
 
 setTimeout(wakeUp, 600000);
 
-
-// post a tweet every 6 hours
+try {
+   // post a tweet every 6 hours
 let cronJob = new cron.CronJob('0 */6 * * *', () => {
    TweetOut();
 });
+} catch (error) {
+   console.log("sent tweet error")
+}
+
 
 cronJob.start();
 
